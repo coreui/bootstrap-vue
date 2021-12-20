@@ -1,0 +1,54 @@
+.brd-layout {
+  padding-right: $brd-gutter-x;
+  padding-left: $brd-gutter-x;
+
+  @include media-breakpoint-up(md) {
+    display: grid;
+    grid-template-areas: "sidebar main";
+    grid-template-columns: 1fr 3fr;
+    gap: $grid-gutter-width;
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 5fr;
+  }
+}
+
+.brd-sidebar {
+  grid-area: sidebar;
+}
+
+.brd-main {
+  grid-area: main;
+
+  @include media-breakpoint-up(md) {
+    display: grid;
+    grid-template-areas:
+      "intro"
+      "toc"
+      "content";
+    grid-template-rows: auto auto 1fr;
+    gap: inherit;
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-template-areas:
+      "intro   toc"
+      "content toc";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 4fr 1fr;
+  }
+}
+
+.brd-intro {
+  grid-area: intro;
+}
+
+.brd-toc {
+  grid-area: toc;
+}
+
+.brd-content {
+  grid-area: content;
+  min-width: 1px; // Fix width when brd-content contains a `<pre>` https://github.com/twbs/bootstrap/issues/25410
+}

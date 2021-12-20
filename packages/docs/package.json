@@ -1,0 +1,26 @@
+{
+  "name": "@coreui/bootstrap-vue-docs",
+  "version": "1.0.0-beta.0",
+  "config": {
+    "version_short": "1.0"
+  },
+  "scripts": {
+    "api": "vue-docgen -c build/docgen.config.js",
+    "dev": "vuepress dev --clean-cache",
+    "build": "vuepress build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@coreui/chartjs": "^3.0.0",
+    "@coreui/coreui": "^4.1.0",
+    "@coreui/icons": "^2.1.0",
+    "@coreui/icons-vue": "^2.0.0",
+    "@vuepress/bundler-webpack": "2.0.0-beta.27",
+    "@vuepress/plugin-toc": "2.0.0-beta.27",
+    "bootstrap": "^5.1.3",
+    "markdown-it-include": "^2.0.0",
+    "vue-docgen-cli": "^4.41.2",
+    "vue-github-button": "^3.0.1",
+    "vuepress": "2.0.0-beta.27"
+  }
+}

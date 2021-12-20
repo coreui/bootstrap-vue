@@ -1,0 +1,55 @@
+// Buttons
+//
+// Custom buttons for the docs.
+
+.btn.btn-brd-primary {
+  font-weight: 600;
+  color: $white;
+  background-color: $brd-blue;
+  border-color: $brd-blue;
+
+  &:hover,
+  &:active {
+    color: $white;
+    background-color: shade-color($brd-blue, 20%);
+    border-color: shade-color($brd-blue, 20%);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($brd-blue, .25);
+  }
+}
+
+.btn-brd-download {
+  font-weight: 600;
+  color: $brd-download;
+  border-color: $brd-download;
+
+  &:hover,
+  &:active {
+    color: $brd-dark;
+    background-color: $brd-download;
+    border-color: $brd-download;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($brd-download, .25);
+  }
+}
+
+.btn-brd-light {
+  color: $gray-600;
+  border-color: $gray-300;
+
+  .show > &,
+  &:hover,
+  &:active {
+    color: $brd-blue;
+    background-color: $white;
+    border-color: $brd-blue-bright;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($brd-blue-bright, .25);
+  }
+}

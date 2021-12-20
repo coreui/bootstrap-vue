@@ -1,0 +1,20 @@
+@import '@coreui/coreui/scss/coreui.scss';
+
+@import 'anchor';
+@import 'demo';
+@import 'footer';
+@import 'layout';
+@import 'sidebar';
+@import 'table-api';
+@import 'toc';
+
+@import 'vars';
+@import 'vars-dark';
+
+@import 'code';
+@import 'code-group';
+@import 'custom-container';
+@import 'page';
+@import 'transitions';
+
+@import '@vuepress/plugin-palette/style';
